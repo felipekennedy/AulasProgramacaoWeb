@@ -3,8 +3,8 @@ body {
 }
 
 .identificacao {
-    background-color: deepskyblue;
-    color: #fcfcfd;
+    background-color:#579FF0;
+    color:#FCFCFD;
 }
 
 .identificacao h1{
@@ -13,6 +13,15 @@ body {
 
 .identificacao h2{
     font-size: 1.5em;
+    font-weight: lighter;
+}
+
+section h3{
+    font-size: 1.7em;
+}
+
+header li a{
+    color:#99A0B0;
     font-weight: lighter;
 }
 
@@ -33,4 +42,8 @@ body {
 .styleprojetos li a{ 
     color: #ffffff;
     font-size: 1.3em;
+}
+
+#sobre img{
+    width: 200px;
 }
