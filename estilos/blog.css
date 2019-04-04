@@ -1,5 +1,13 @@
+*{
+    box-sizing: bodrder-box;
+}
+
 body {
     font-family: Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 section img{
@@ -11,12 +19,23 @@ header{
     border-bottom: 1px solid #ccc;
     padding-top: 1em;
     padding-bottom: 1em;
+    position: fixed;
+    width: 100%;
 }
 
 header li{
     display: inline-block;
     margin-left: 3em;
-    padding: 2em 0em 2em 0em;
+}
+
+header li a{
+    color: #99a0d0;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+header ul{
+    text-align: center;
 }
 
 #contato li{
@@ -33,12 +52,13 @@ header li{
 section{
     padding-top: 2em;
     padding-bottom: 2em;
+    text-align:center;
 }
 
 .identificacao {
     background-color:#579FF0;
     color:#FCFCFD;
-    padding: 7em 2em;
+    padding: 10em 2em 7em;
 }
 
 .identificacao h1{
@@ -101,14 +121,26 @@ header li a{
     color: #579ff0;
     font-size: 1.5em;
     margin: 1em;
+    width: 50%;
 }
 
 #sobre p.text{
     margin: 1em;
+    width: 50%;
+    text-align: justify;
+    line-height:1.4;
+}
+
+#sobre{
+    position: relative;
+
 }
 
 #sobre img{
     width: 200px;
+    position: absolute;
+    top: 2em;
+    right: 10%;
 }
 
 footer{
