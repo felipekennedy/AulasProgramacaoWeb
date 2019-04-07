@@ -16,7 +16,7 @@ section img{
 }
 
 header{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid gray;
     padding-top: 1em;
     padding-bottom: 1em;
     position: fixed;
@@ -25,10 +25,11 @@ header{
 
 header li{
     display: inline-block;
-    margin-left: 3em;
+    margin-right: 3em;
+    padding-right: 300px;
 }
 
-header li a{
+header li a:hover{
     color: #99a0d0;
     font-weight: lighter;
     text-transform: uppercase;
@@ -36,6 +37,12 @@ header li a{
 
 header ul{
     text-align: center;
+    text-shadow: rgb(109, 88, 88) 0.1em 0.1em 0.2em;
+}
+
+#contato{
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 #contato li{
@@ -45,8 +52,8 @@ header ul{
 #contato li a{
     display: inline-block;
     margin: 1em;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     text-indent: -9999px;
 }
 
@@ -54,12 +61,12 @@ header ul{
     background-image: url("../Imagens/email.png"); 
 }
 
-#contato .twitter{
-    background-image: url("../Imagens/twitter.png"); 
+#contato .instagram{
+    background-image: url("../Imagens/instagram.png"); 
 }
 
 #contato .facebook{
-    background-image: url("../Imagens/face.png"); 
+    background-image: url("../Imagens/facebook.png"); 
 }
 
 #contato .linkedin{
@@ -82,9 +89,10 @@ section{
 }
 
 .identificacao {
-    background-color:#579FF0;
-    color:#FCFCFD;
+    color: #fff;
     padding: 10em 2em 7em;
+    background-image: url("../Imagens/landscapeBG.png");
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .identificacao h1{
@@ -113,8 +121,9 @@ header li a{
 }
 
 .claras {
-    background-color: #fcfcfd;
-    color: #2B313E;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .projetos-header{
@@ -148,6 +157,92 @@ header li a{
     line-height: 1.2;
 }
 
+#galeria h1{
+    font-family: 'monospace';
+    font-size: 40px;
+    color: black;
+    text-shadow: gray 0.1em 0.1em 0.2em;
+}
+
+#galeria ul{
+    width: 880;
+    list-style: none;
+    display: flex;
+    padding:100px 200px 100px 27%;
+    
+}
+
+#galeria .min{
+    width: 200px;
+    padding: 10px;
+
+}
+
+#galeria .lbox{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#galeria .lbox{
+    width: 0;
+    height: 0;
+}
+
+#galeria{
+    height: 700px;
+}
+
+#galeria .lbox:target{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background: rgba(10,10,10,.7);
+    position: fixed;
+}
+
+#galeria .box_img{
+    width: 1000px;
+    padding:150px 200px 150px 27%;
+}
+
+#galeria .box_img img{
+    opacity: 0;
+}
+
+#galeria .lbox:target .box_img img{
+opacity: 1;
+transition: opacity .4s linear;
+}
+
+#galeria .btn{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#galeria #prev{
+    left: 5%;
+    top: 45%;
+}
+
+#galeria #next{
+    right: 5%;
+    top: 45%;
+}
+
+#galeria #close{
+    right: 2%;
+    top: 0;
+}
+
 #sobre p.bio{
     color: #579ff0;
     font-size: 1.5em;
@@ -162,14 +257,10 @@ header li a{
     line-height:1.4;
 }
 
-#sobre{
-    position: relative;
-
-}
 
 #sobre img{
     width: 200px;
-    position: absolute;
+    position: unset;
     top: 2em;
     right: 10%;
 }
@@ -177,4 +268,5 @@ header li a{
 footer{
     padding-top: 1em;
     padding-bottom: 1em;
+    text-align: center;
 }
