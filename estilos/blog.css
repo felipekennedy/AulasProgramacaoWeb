@@ -4,6 +4,7 @@
 
 body {
     font-family: Helvetica, sans-serif;
+    background-image: url("../Imagens/dcanvas4.jpg");
 }
 
 a{
@@ -57,6 +58,11 @@ header ul{
     text-indent: -9999px;
 }
 
+#contato h3{
+    font-family: 'monospace';
+    font-size: 40px;
+}
+
 #contato .email{
     background-image: url("../Imagens/email.png"); 
 }
@@ -80,6 +86,7 @@ header ul{
 .container{
     padding-left: 10%;
     padding-right: 10%;
+   
 }
 
 section{
@@ -96,11 +103,13 @@ section{
 }
 
 .identificacao h1{
-    font-size: 2.5em;
+    font-family: 'monospace';
+    font-size: 40px;
     margin-bottom: 0.7em;
 }
 
 .identificacao h2{
+    font-family: 'monospace';
     font-size: 1.5em;
     font-weight: lighter;
 }
@@ -126,49 +135,64 @@ header li a{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.projetos-header{
-    float: left;
-    width: 30%;
+#projetos .card{
+    width: 200px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    transition: 0.4s;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    float: none;
+    margin: 10px;
+    height: 100px;
+    position: top;
+    display: inline-block;
+    
 }
 
-.projetos-header h3{
-    margin-top: 1em;
+#projetos img{
+    border-radius: 5px 5px 0 0;
 }
 
-.styleprojetos{
-    margin-left: 30%;
+#projetos .card:hover{
+    box-shadow: 0 8px 16px 0 #2B313E;
 }
 
-.styleprojetos li{
-    background-color: #6F768B;
-    padding: 1em;
-    margin-bottom: 2em;
+#projetos .cardcontainer{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    font-weight: bolder;
+    font-size: medium;
+    background: #fff;
+    border-radius: 5px;
 }
 
-.styleprojetos li a{ 
-    color: #ffffff;
-    font-size: 1.3em;
+#projetos .projetos-header{
+    padding-top: 30px;
+    margin: 0;
+    padding-right: 75%;
+    font-size: 40px;
+    font-family: 'Impact';
 }
 
-.styleprojetos li p{
-    color: #fff;
-    margin-top: 0.5em;
-    text-align: justify;
-    line-height: 1.2;
+#projetos .projetos-header h1{
+    padding-top: 30px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
+
 
 #galeria h1{
     font-family: 'monospace';
     font-size: 40px;
-    color: black;
-    text-shadow: gray 0.1em 0.1em 0.2em;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 #galeria ul{
     width: 880;
     list-style: none;
     display: flex;
-    padding:100px 200px 100px 27%;
+    padding:100px 200px 100px 450px;
     
 }
 
@@ -205,7 +229,7 @@ header li a{
 
 #galeria .box_img{
     width: 1000px;
-    padding:150px 200px 150px 27%;
+    padding:150px 200px 150px 450px;
 }
 
 #galeria .box_img img{
@@ -244,25 +268,21 @@ transition: opacity .4s linear;
 }
 
 #sobre p.bio{
+    font-family: 'monospace';
+    font-size: 30px;
     color: #579ff0;
-    font-size: 1.5em;
-    margin: 1em;
+    padding: 1em;
     width: 50%;
+    padding-left: 380px;
 }
 
 #sobre p.text{
-    margin: 1em;
+    font-family: 'monospace';
+    padding: 1em;
+    padding-left: 380px;
     width: 50%;
-    text-align: justify;
+    text-align: center;
     line-height:1.4;
-}
-
-
-#sobre img{
-    width: 200px;
-    position: unset;
-    top: 2em;
-    right: 10%;
 }
 
 footer{
