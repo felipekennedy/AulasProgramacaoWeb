@@ -30,12 +30,6 @@ header li{
     padding-right: 15em;
 }
 
-header li a:hover{
-    color: #99a0d0;
-    font-weight: lighter;
-    text-transform: uppercase;
-}
-
 header ul{
     text-align: center;
     text-shadow: rgb(109, 88, 88) 0.1em 0.1em 0.2em;
@@ -125,14 +119,9 @@ header li a{
 }
 
 .escuras {
-    background-color: #2B313E;
+    background-color: #000000;
     color: #fcfcfd;
-}
-
-.claras {
-    background-color: rgb(255, 255, 255);
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    font-family: 'monospace';
 }
 
 #projetos .card{
@@ -150,7 +139,11 @@ header li a{
     
 }
 
-#projetos img{
+#projetos .projetos-header img{
+    border-radius: 10px;
+}
+
+#projetos .wrap img{
     border-radius: 5px 5px 0 0;
 }
 
@@ -171,7 +164,7 @@ header li a{
     margin: 0;
     padding-right: 75%;
     font-size: 3em;
-    font-family: 'Impact';
+    font-family: 'monospace';
 }
 
 #projetos .projetos-header h1{
@@ -192,8 +185,7 @@ header li a{
     width: 40em;
     list-style: none;
     display: flex;
-    padding:5em 30em 5em 18%;
-    
+    padding:5em 30em 5em 26%;
 }
 
 #galeria .min{
@@ -229,7 +221,8 @@ header li a{
 
 #galeria .box_img{
     width: 50em;
-    padding:8em 22%;
+    padding:6em 31%;
+    padding-top: 15em;
 }
 
 #galeria .box_img img{
@@ -278,7 +271,7 @@ transition: opacity .4s linear;
 
 #sobre p.text{
     font-family: 'monospace';
-    padding: 3em;
+    padding-bottom: 3em;
     padding-left: 25%;
     width: 50%;
     text-align: center;
@@ -289,4 +282,46 @@ footer{
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
+}
+
+.button {
+    border: 2px solid #6600ff;
+    border-radius: 12px;
+    position: relative;
+    background-color: #190f6c;
+    font-size: 1.5em;
+    color: rgb(0, 140, 255);
+    padding: 5px;
+    width: 6em;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.button:hover {
+    background-color: rgb(0, 140, 255); /* Green */
+    color: white;
 }
