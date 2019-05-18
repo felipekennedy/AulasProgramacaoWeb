@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section img {
+    width: 100%;
+    max-width: 300px;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+}
+
+header ul {
+    text-align: right;
+}
+
+header li a {
+    color: #99A0B0;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+#contato li {
+    display: inline-block;
+}
+
+#contato li a{
+    display: inline-block;
+    margin: 1em;
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+
+}
+
+#contato .email {
+    background-image: url("../imagens/email.png");
+}
+
+#contato .face {
+    background-image: url("../imagens/face.png");
+}
+
+#contato .twitter {
+    background-image: url("../imagens/twitter.png");
+}
+
+#contato .github {
+    background-image: url("../imagens/github.png");
+}
+
+#contato .linkedin {
+    background-image: url("../imagens/linkedin.png");
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.identificacao {
+    background-color: #579FF0;
+    color: #FCFCFD;
+    padding: 10em 2em 7em;
+}
+
+.identificacao h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+}
+
+.identificacao h2 {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+section h3 {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+}
+
+header li a {
+    color: #99A0B0;
+    font-weight: lighter;
+}
+
+.escuras {
+    background-color: #2B313E;
+    color: #FCFCFD;
+}
+
+.claras {
+    background-color: #FCFCFD;
+    color: #2B313E;
+}
+
+.projetos-header {
+    float: left;
+    width: 30%;
+}
+
+.projetos-header h3 {
+    margin-top: 1em;
+}
+
+.styleprojetos{
+    margin-left: 40%;
+}
+
+.styleprojetos li {
+    background-color: #6F768B;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.styleprojetos li a {
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+.styleprojetos li p {
+    color: #fff;
+    margin-top: 0.5em;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+#sobre p.text {
+    margin: 1em;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#sobre p.bio {
+    color: #579ff0;
+    font-size: 1.5em;
+    margin: 1em;
+    width: 50%;
+}
+
+#sobre {
+    position: relative;
+}
+
+#sobre img {
+    width: 200px;
+    position: absolute;
+    top: 2.5em;
+    right: 10%;
+}
+
+footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
