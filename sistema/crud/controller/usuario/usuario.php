@@ -10,22 +10,30 @@
 <body>
     <?php
     require_once '../../view/nav.php';
+    require_once 'usuarioDAO.php';
     ?>
 
     <div class="container">
         <div class="row justify-content-center bg-light">
             <form action="usuarioDAO.php" method="POST">
+
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
                 <div class="form-group">
                     <label>Usuário</label>
-                    <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Digite o usuario aqui!">
+                    <input type="text" value="<?php echo $usuario; ?>" name="usuario" id="usuario" class="form-control" placeholder="Digite o usuario aqui!">
                 </div>
 
                 <div class="form-group">
-                    <label>senha</label> <input type="password" name="senha" id="senha" class="form-control" placeholder="Digite sua senha aqui!">
+                    <label>senha</label> <input type="password" value="<?php echo $senha; ?>" name="senha" id="senha" class="form-control" placeholder="Digite sua senha aqui!">
                 </div>
 
-                <button type="submit" class="btn btn-primary" name="salvar">Salvar</button>
-
+                <div class="form-group">
+                    <?php if ($id != 0) : ?>
+                        <button type="submit" class="btn btn-info" name="atualizar">Atualizar</button>
+                    <?php else : ?>
+                        <button type="submit" class="btn btn-primary" name="salvar">Salvar</button>
+                    <?php endif ?>
+                </div>
             </form>
         </div>
 
@@ -62,7 +70,7 @@
                         </td>
 
                         <td>
-                            <a href="#" class="btn btn-info"> Editar</a>
+                            <a href="usuario.php?editar=<?php echo $row['id']; ?>" class="btn btn-info"> Editar</a>
                             <a href="usuarioDAO.php?excluir=<?php echo $row['id']; ?>" class="btn btn-danger"> Excluir</a>
 
                         </td>
